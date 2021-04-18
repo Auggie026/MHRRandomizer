@@ -3,6 +3,7 @@ package Controller
 import Adapters.MonstersAdapter
 import Adapters.WeaponsAdapter
 import Services.DataService.monsters
+import Services.DataService.weapons
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -29,6 +30,11 @@ class MainActivity : AppCompatActivity() {
                 val randomMonster = monsters.elementAt(random.nextInt(monsters.size))
                 val resourceId = this.resources.getIdentifier(randomMonster.image, "drawable", this.packageName)
                 monsterImage.setImageResource(resourceId)
+
+
+                val randomWeapon = weapons.elementAt(random.nextInt(weapons.size))
+                val resourceId2 = this.resources.getIdentifier(randomWeapon.image, "drawable", this.packageName)
+                weaponImage.setImageResource(resourceId2)
 
 
         }
