@@ -1,12 +1,11 @@
 package Controller
 
-import Adapters.MonstersAdapter
-import Adapters.WeaponsAdapter
 import Services.DataService.monsters
 import Services.DataService.weapons
-import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.example.mhrrandomizer.R
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
@@ -14,8 +13,6 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var adapter : MonstersAdapter
-    lateinit var wadapter : WeaponsAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,7 +36,11 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+
+
         }
+
+
 
 
 }
