@@ -39,7 +39,9 @@ object DataService {
             Monsters("tigrex", "tigrex"),
             Monsters("tobi_kadachi", "tobi_kadachi"),
             Monsters("volvidon", "volvidon"),
-            Monsters("zinogre", "zinogre")
+            Monsters("zinogre", "zinogre"),
+            Monsters("chameleos", "chameleos"),
+            Monsters("teostra", "teostra")
     )
 
     val weapons = listOf(
