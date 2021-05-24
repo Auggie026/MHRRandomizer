@@ -25,24 +25,17 @@ class MainActivity : AppCompatActivity() {
 
                 val random = Random()
                 val randomMonster = monsters.elementAt(random.nextInt(monsters.size))
-                val resourceId = this.resources.getIdentifier(randomMonster.image, "drawable", this.packageName)
+                val resourceId = this.resources.getIdentifier(randomMonster.image
+                    , "drawable", this.packageName)
                 monsterImage.setImageResource(resourceId)
 
 
                 val randomWeapon = weapons.elementAt(random.nextInt(weapons.size))
-                val resourceId2 = this.resources.getIdentifier(randomWeapon.image, "drawable", this.packageName)
+                val resourceId2 = this.resources.getIdentifier(randomWeapon.image
+                    , "drawable", this.packageName)
                 weaponImage.setImageResource(resourceId2)
-
-
         }
-
-
-
         }
-
-
-
-
 }
 
 
